@@ -7,8 +7,9 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 - `fastfetch`
 - kde plasma
   - desktop & konsole themed using [catppuccin](https://catppuccin.com) macchiato
+  - also [monocraft](https://github.com/IdreesInc/Monocraft) font used in konsole
 - `moonlight` (discord)
-  - mostly for linux native updater
+  - mostly for `nativeFixes` linux native updater
   - installed discord in user folder because client modding is incompatible with system installs basically
     - used [this script by @maddymeows](https://gist.github.com/maddymeows/6af1a5d5a870c13b7b159c4463edee70) to bootstrap
 
@@ -16,6 +17,10 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 
 - find some way to reasonably manage this without making a hellish symlink script
   - surely someone made it that easy, right?
+- ^ related: automate theme install by myself instead of using the catppuccin repo scripts
+- should i submodule monocraft?
+  - used the official nerdfont file, but found a lot of missing glyphs
+  - maybe write a `PKGBUILD` for self-patching nerdfont glyphs
 
 # license
 
