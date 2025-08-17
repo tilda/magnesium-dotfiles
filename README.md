@@ -27,3 +27,4 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 CC-BY-4.0, with some file-by-file exceptions:
 
 - `fastfetch/ohayo.png` comes from an official umamusume sticker pack, ARR cygames
+- all submodules licensed as whatever their author used
