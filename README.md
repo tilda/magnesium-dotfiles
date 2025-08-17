@@ -9,7 +9,8 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
   - desktop & konsole themed using [catppuccin](https://catppuccin.com) macchiato
 - `moonlight` (discord)
   - mostly for linux native updater
-  - uses local discord install as system installs are not supported
+  - installed discord in user folder because client modding is incompatible with system installs basically
+    - used [this script by @maddymeows](https://gist.github.com/maddymeows/6af1a5d5a870c13b7b159c4463edee70) to bootstrap
 
 ## todo
 
