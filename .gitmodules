@@ -1,0 +1,9 @@
+[submodule "kde/desktop"]
+	path = kde/desktop
+	url = https://github.com/catppuccin/kde
+[submodule "kde/konsole"]
+	path = kde/konsole
+	url = https://github.com/catppuccin/konsole
+[submodule "moonlight-mod/discord-manager"]
+	path = moonlight-mod/discord-manager
+	url = https://gist.github.com/maddymeows/6af1a5d5a870c13b7b159c4463edee70
