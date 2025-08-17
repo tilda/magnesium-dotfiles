@@ -1,0 +1,20 @@
+{
+  "extensions": {
+    "moonbase": true,
+    "disableSentry": true,
+    "noTrack": true,
+    "noHideToken": true,
+    "favouriteGifSearch": true,
+    "freeMoji": true,
+    "inAppNotifications": true,
+    "nativeFixes": {
+      "config": {
+        "linuxUpdater": true
+      },
+      "enabled": true
+    }
+  },
+  "repositories": [
+    "https://moonlight-mod.github.io/extensions-dist/repo.json"
+  ]
+}

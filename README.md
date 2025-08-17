@@ -1,0 +1,23 @@
+# `magnesium` dotfiles
+
+i'm trying this arch linux thing again so here's the stuff i've been using so far. themed based off rice shower from umamusume
+
+![current desktop screenshot (august 17th 2025)](assets/081725-screenie.png)
+
+- `fastfetch`
+- kde plasma
+  - desktop & konsole themed using [catppuccin](https://catppuccin.com) macchiato
+- `moonlight` (discord)
+  - mostly for linux native updater
+  - uses local discord install as system installs are not supported
+
+## todo
+
+- find some way to reasonably manage this without making a hellish symlink script
+  - surely someone made it that easy, right?
+
+# license
+
+CC-BY-4.0, with some file-by-file exceptions:
+
+- `fastfetch/ohayo.png` comes from an official umamusume sticker pack, ARR cygames
