@@ -8,6 +8,7 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 - kde plasma
   - desktop & konsole themed using [catppuccin](https://catppuccin.com) macchiato
   - also [monocraft](https://github.com/IdreesInc/Monocraft) font used in konsole
+  - [wallpaper](https://konachan.net/post/show/347326/animal_ears-anthropomorphism-hlymoriia-purple-rice) by haliya*
 - `moonlight` (discord)
   - mostly for `nativeFixes` linux native updater
   - installed discord in user folder because client modding is incompatible with system installs basically
