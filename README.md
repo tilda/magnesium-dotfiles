@@ -4,6 +4,8 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 
 ![current desktop screenshot (august 17th 2025)](assets/081725-screenie.png)
 
+- 1password
+  - modified .desktop file so quick access can be configured in DE settings (doesn't work out of box)
 - `fastfetch`
 - kde plasma
   - desktop & konsole themed using [catppuccin](https://catppuccin.com) macchiato
