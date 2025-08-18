@@ -20,6 +20,7 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 
 - find some way to reasonably manage this without making a hellish symlink script
   - surely someone made it that easy, right?
+  - perfect excuse to learn iac ([pyinfra](https://docs.pyinfra.com/en/3.x/getting-started.html)?)
 - ^ related: automate theme install by myself instead of using the catppuccin repo scripts
 - should i submodule monocraft?
   - used the official nerdfont file, but found a lot of missing glyphs
