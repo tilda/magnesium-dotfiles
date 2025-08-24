@@ -1,1 +1,7 @@
+# downloaded by kde/wallpaper.sh
 wallpaper.jpg
+
+# arch packaging artifacts
+pkg/
+src/
+*.tar.zst

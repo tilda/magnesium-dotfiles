@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# /etc/lemurs/wayland/niri
+exec niri 
