@@ -15,6 +15,9 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
   - mostly for `nativeFixes` linux native updater
   - installed discord in user folder because client modding is incompatible with system installs basically
     - used [this script by @maddymeows](https://gist.github.com/maddymeows/6af1a5d5a870c13b7b159c4463edee70) to bootstrap
+- [`niri`](https://github.com/yalter/niri)
+  - packaged script for `lemurs` to allow it to launch the wm
+  - havent done much here yet so the other stuff will come soon tm
 
 ## todo
 
@@ -25,6 +28,7 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 - should i submodule monocraft?
   - used the official nerdfont file, but found a lot of missing glyphs
   - maybe write a `PKGBUILD` for self-patching nerdfont glyphs
+- can i export my kde taskbar here somehow that's like half of the config
 
 # license
 
