@@ -15,6 +15,13 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 - 1password
   - modified .desktop file to make quick access work in KDE, still in the repo for now?
 
+## other notes
+
+on this system, i'm using the cachyos repository on top of arch.
+
+i installed windows on it first so it created a 200mb EFI partition. on my other machines, i have previously had issues where windows updates will loop because of the space constraints when dualbooting. the actual cachyos' gui installer *demands* a 2gb partition.
+the proper solution to this is an `XBOOTLDR` partition, which is supported by `systemd-boot` and stores kernel images separate from the bootloader itself. unfortunately, it's not supported by the cachyos installer!
+i also really didn't feel like [working around their system](https://discuss.cachyos.org/t/is-it-possible-to-create-and-utilize-an-xbootldr-partition-within-the-setup/7196/4) when i can just have arch anyway ~~for hype moments and aura~~, then leech off their repos and get *probably* most of the optimizations
 
 ## todo
 
