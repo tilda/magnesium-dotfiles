@@ -7,6 +7,7 @@ i'm trying this arch linux thing again so here's the stuff i've been using so fa
 - [`niri`](https://github.com/yalter/niri)
   - [`noctalia-shell`](https://github.com/noctalia-dev/noctalia-shell)
   - [wallpaper](https://www.pixiv.net/en/artworks/116190510) by Run_Rotary
+    - noctalia auto-generates a `~/.config/niri/noctalia.kdl` for the colorscheme
 - `fastfetch`
 - `moonlight` (discord)
   - mostly for `nativeFixes` linux native updater
