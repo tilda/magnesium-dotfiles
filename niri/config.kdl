@@ -1,1 +1,100 @@
-/home/sst/.config/niri/config.kdl
+output "eDP-1" {
+    scale 1.0
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto" // wayland backend for electron apps
+    QT_QPA_PLATFORMTHEME "gtk3"
+}
+
+cursor {
+    xcursor-theme "catppuccin-macchiato-green-cursors"
+    xcursor-size 24
+}
+
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true // Uses a blurred wallpaper in Niri's overview
+}
+
+layout {
+    gaps 8
+    focus-ring {
+        width 2
+    }
+}
+
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+}
+
+prefer-no-csd
+screenshot-path null
+
+binds {
+    Mod+Shift+Slash { show-hotkey-overlay; }
+
+    Mod+T hotkey-overlay-title="Run ghostty" { spawn "ghostty"; }
+    Mod+D hotkey-overlay-title="Open application search" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+
+    Mod+O repeat=false { toggle-overview; }
+    Mod+Q repeat=false { close-window; }
+
+    Mod+Left  { focus-column-left;  }
+    Mod+Down  { focus-window-down;  }
+    Mod+Up    { focus-window-up;    }
+    Mod+Right { focus-column-right; }
+    Mod+Ctrl+Left  { move-column-left; }
+    Mod+Ctrl+Down  { move-window-down; }
+    Mod+Ctrl+Up    { move-window-up; }
+    Mod+Ctrl+Right { move-column-right; }
+    Mod+Shift+Page_Down { move-window-to-workspace-down; }
+    Mod+Shift+Page_Up   { move-window-to-workspace-up; }
+    Mod+Page_Up { focus-workspace-up; }
+    Mod+Page_Down { focus-workspace-down; }
+
+    Mod+F { maximize-column; }
+    Mod+Shift+V { toggle-window-floating; }
+
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+    Mod+BracketLeft { set-window-height "-10%"; }
+    Mod+BracketRight { set-window-height "+10%"; }
+
+    // replicating sharex default binds
+    Print { screenshot-screen; }
+    Ctrl+Print { screenshot; }
+    Alt+Print { screenshot-window; }
+
+    Mod+Period hotkey-overlay-title="Open emoji search" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
+    Mod+V hotkey-overlay-title="Open clipboard history" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
+
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+
+    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+    Mod+L hotkey-overlay-title="Lock screen" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Mod+Shift+E { quit; }
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+spawn-at-startup "qs" "-c" "noctalia-shell"
+include "./noctalia.kdl"
